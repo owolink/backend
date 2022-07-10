@@ -91,12 +91,8 @@ AUTH_USER_MODEL = 'authentify.User'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysqlite',
-        # 'NAME': '', 
-        # 'USER': '', 
-        # 'PASSWORD': '', 
-        # 'HOST': 'localhost', 
-        # 'PORT': '', 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
